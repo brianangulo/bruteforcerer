@@ -1,11 +1,14 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import Main from "./components/Main";
+import store from "./redux/store";
+import { Provider } from "react-redux";
+import "./App.css";
 
 function App() {
   return (
-    <div>
-      <h1>This is my App</h1>
-    </div>
+    <Provider store={store}>
+      <Main />
+    </Provider>
   );
 }
 
