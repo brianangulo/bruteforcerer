@@ -3130,6 +3130,11 @@ browserslist@^4.0.0, browserslist@^4.12.0, browserslist@^4.14.5, browserslist@^4
     escalade "^3.1.1"
     node-releases "^1.1.70"
 
+bruteforcejs@^1.1.11:
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/bruteforcejs/-/bruteforcejs-1.1.11.tgz#a8db4f14b2dc623fb7ac3f7de48040035a4eff7d"
+  integrity sha512-PomA1/w3FqHfYciGXAYOMnf79rGoGyddL25GPhNQ8x8vonc7I6MNzUwKphzPdGXKkJmmie056fqRkVootowO+Q==
+
 bser@2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/bser/-/bser-2.1.1.tgz#e6787da20ece9d07998533cfd9de6f5c38f4bc05"

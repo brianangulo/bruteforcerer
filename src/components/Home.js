@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setPassword } from "../redux/slicer";
 import { TextField, Button } from "@material-ui/core";
+import { bruteforce } from "bruteforcejs";
 
 function Home() {
   const dispatch = useDispatch();
@@ -11,8 +12,19 @@ function Home() {
     dispatch(setPassword(value.target.value))
   }
 
+  const handleBruting = () => {
+    bruteforce("ABCabc", (result) => {
+      console.log(result); // Display current bruteforce string
+      if (result === "abBac") {
+        // If current bruteforce string is right
+        return true; // Return true => finish bruteforce
+      }
+    })
+  }
+
   const handleSubmit = () => {
       console.log(password);
+      handleBruting();
       dispatch(setPassword(""));
   }
 
