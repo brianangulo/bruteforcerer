@@ -6,9 +6,8 @@ import {
   setEnteredPas,
   setToggleReveal,
 } from "../redux/slicer";
-import { TextField, Button } from "@material-ui/core";
 import { chars } from "../shared/chars";
-import RevealText from "./RevealText";
+import Content from "./HomeContent";
 
 const bruteforce = require("bruteforcejs");
 
@@ -54,28 +53,14 @@ function Home(props) {
   };
 
   return (
-    <div>
-      <div>
-        <h3>Lets see how secure is your password?</h3>
-      </div>
-      <form noValidate autoComplete="off">
-        <TextField
-          id="outlined-basic"
-          label="Your Password"
-          variant="outlined"
-          onChange={handleChange}
-          value={password}
-        />
-      </form>
-      <div>
-        <Button variant="contained" color="primary" onClick={handleSubmit}>
-          Submit
-        </Button>
-      </div>
-      <div>
-        <RevealText timer={timer} enteredPass={enteredPass} toggleReveal={toggleReveal} />
-      </div>
-    </div>
+    <Content
+      handleChange={handleChange}
+      password={password}
+      handleSubmit={handleSubmit}
+      timer={timer}
+      enteredPass={enteredPass}
+      toggleReveal={toggleReveal}
+    />
   );
 }
 
