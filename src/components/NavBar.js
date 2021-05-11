@@ -3,15 +3,17 @@ import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 function NavBar() {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand href="#home">Brute Forcing</Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="mr-auto">
-                    <Nav.Link href="#features">Contact</Nav.Link>
-                </Nav>
-            </Navbar.Collapse>
-        </Navbar>
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <div className="container-fluid" >
+          <Navbar.Brand className="ml-auto" href="#home">Brute Forcing</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ml-auto">
+              <Nav.Link href="#features">Contact</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </div>
+      </Navbar>
     );
 }
 
