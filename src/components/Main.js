@@ -1,10 +1,15 @@
 import React from 'react';
 import Home from "./Home";
+import Footer from "./Footer";
+import NavBar from "./NavBar";
 
 function Main() {
-    
+
     return (
-        <Home />
+        <React.Fragment>
+            <NavBar />
+            <Home />
+        </React.Fragment>
     );
 }
 
