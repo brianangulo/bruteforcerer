@@ -9,6 +9,7 @@ function Main() {
         <React.Fragment>
             <NavBar />
             <Home />
+            <Footer />
         </React.Fragment>
     );
 }

@@ -3,65 +3,72 @@ import React from "react";
 function Footer() {
 
     return (
-        <footer className="site-footer">
+      <footer className="site-footer bg-dark">
         <div className="container">
           <div className="row">
-            <div className="col-4 col-sm-2 offset-1">
-              <h5>Links</h5>
-              <ul className="list-unstyled">
-                <li>
-                  <href to="/home">Home</href>
-                </li>
-                <li>
-                  <href to="/directory">Directory</href>
-                </li>
-                <li>
-                  <href to="/aboutus">About</href>
-                </li>
-                <li>
-                  <href to="/contactus">Contact</href>
-                </li>
-              </ul>
+            <div className="col-sm">
+              <h5 className="text-light nav-link" href="#contactform">
+                Contact
+              </h5>
+              <p className="text-light no">
+                <a
+                  className="text-light nav-link"
+                  href="mailto:bangulo219@gmail.com"
+                >
+                  Contact Us Form
+                </a>
+              </p>
+              <p className="text-light no">
+                <a
+                  className="text-light nav-link"
+                  href="mailto:bangulo219@gmail.com"
+                >
+                  Author: Brian Angulo <br />
+                  bangulo219@gmail.com
+                </a>
+              </p>
             </div>
-            <div className="col-6 col-sm-3 text-center">
-              <h5>Social</h5>
-              <a
-                className="btn btn-social-icon btn-instagram"
-                href="http://instagram.com/"
-              >
-                <i className="fa fa-instagram" />
-              </a>{" "}
-              <a
-                className="btn btn-social-icon btn-facebook"
-                href="http://www.facebook.com/"
-              >
-                <i className="fa fa-facebook" />
-              </a>{" "}
-              <a
-                className="btn btn-social-icon btn-twitter"
-                href="http://twitter.com/"
-              >
-                <i className="fa fa-twitter" />
-              </a>{" "}
-              <a
-                className="btn btn-social-icon btn-google"
-                href="http://youtube.com/"
-              >
-                <i className="fa fa-youtube" />
-              </a>
+            <div className="col-sm">
+              <h5 className="text-light nav-link" href="#contactform">
+                Community
+              </h5>
+              <p className="text-light no">
+                <a
+                  className="text-light nav-link"
+                  href="https://twitter.com/BrianAngulo11"
+                >
+                  Twitter
+                </a>
+              </p>
+              <p className="text-light no">
+                <a
+                  className="text-light nav-link"
+                  href="https://stackoverflow.com/users/story/12778760?newreg=a2b8af0f4d7e4da3aec8f9ee05b3368a&_=1"
+                >
+                  Stack Overflow
+                </a>
+              </p>
             </div>
-            <div className="col-sm-4 text-center">
-              <a role="button" className="btn btn-href" href="tel:+12065551234">
-                <i className="fa fa-phone" /> 1-206-555-1234
-              </a>
-              <br />
-              <a
-                role="button"
-                className="btn btn-href"
-                href="mailto:notreal@notreal.co"
-              >
-                <i className="fa fa-envelope-o" /> campsites@nucamp.co
-              </a>
+            <div className="col-sm">
+              <h5 className="text-light nav-link" href="#contactform">
+                More
+              </h5>
+              <p className="text-light no">
+                <a
+                  className="text-light nav-link"
+                  href="https://github.com/brianangulo/bruteforcerer"
+                >
+                  GitHub
+                </a>
+              </p>
+              <p className="text-light no">
+                <a
+                  className="text-light nav-link"
+                  href="https://github.com/brianangulo"
+                >
+                  More of my work on GitHub
+                </a>
+              </p>
             </div>
           </div>
         </div>
