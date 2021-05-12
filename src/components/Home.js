@@ -60,6 +60,7 @@ function Home(props) {
       timer={timer}
       enteredPass={enteredPass}
       toggleReveal={toggleReveal}
+      submitToggle={false}
     />
   );
 }
