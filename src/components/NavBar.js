@@ -5,7 +5,7 @@ function NavBar() {
     return (
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <div className="container" >
-          <Navbar.Brand className="ml-auto" href="#home">Brute Forcing</Navbar.Brand>
+          <Navbar.Brand className="ml-auto" href="#home">Brute Force-It</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto">
