@@ -1,13 +1,15 @@
 import React from "react";
 import { TextField, Button } from "@material-ui/core";
 import RevealText from "./RevealText";
+import Article from "./Article.js";
 
 function Content(props) {
   return (
     <div id="homeContent" className="container">
-      <div>
+      <Article />
+      <div className="justify-content-cen">
         <h4>How long will it take us to break your password?</h4>
-          <h5>Test Below  </h5>
+        <h5>Test Below </h5>
       </div>
       <form noValidate autoComplete="off">
         <TextField

@@ -5,10 +5,10 @@ function Article() {
     <div>
       <h2>What is a Brute Force Attack?</h2>
       <p>
-        Below from excerpt
+        Below excerpt from {""}
         <a href="https://en.wikipedia.org/wiki/Brute-force_attack">
-          Wikipedia:
-        </a>
+          Wikipedia
+        </a>:
       </p>
       <p>
         A brute-force attack consists of an attacker submitting many passwords
