@@ -8,7 +8,7 @@ function NavBar() {
           <Navbar.Brand className="ml-auto" href="#home">Brute Force-It</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ml-auto">
+            <Nav>
               <Nav.Link href="#features">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
