@@ -7,6 +7,7 @@ export const slice = createSlice({
         timer: "",
         enteredPass: "",
         toggleReveal: false,
+        isMobile: false,
     },
     reducers: {
         setPassword: (state, action) => {
@@ -20,10 +21,14 @@ export const slice = createSlice({
         },
         setToggleReveal: (state, action) => {
             state.toggleReveal = action.payload
+        },
+        setIsMobile: (state, action) => {
+            state.isMobile = action.payload
         }
     }
 })
 
-export const { setPassword, setTimer, setEnteredPas, setToggleReveal } = slice.actions
+export const { setPassword, setTimer, setEnteredPas, setToggleReveal, setIsMobile } =
+  slice.actions;
 
 export default slice.reducer

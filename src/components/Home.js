@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
   setPassword,
   setTimer,
   setEnteredPas,
   setToggleReveal,
+  setIsMobile,
 } from "../redux/slicer";
 import { chars } from "../shared/chars";
 import Content from "./HomeContent";
@@ -19,11 +20,22 @@ function Home(props) {
   const timer = useSelector((state) => state.slicer.timer);
   const enteredPass = useSelector((state) => state.slicer.enteredPass);
   const toggleReveal = useSelector((state) => state.slicer.toggleReveal);
-
+  const isMobile = useSelector((state) => state.slicer.isMobile);
   //handles change on the form
   const handleChange = (value) => {
     dispatch(setPassword(value.target.value));
   };
+
+  //handles screen resizing behavior
+  const handleIsMobile = () => {
+    dispatch(setIsMobile(window.innerWidth < 500))
+    console.log("handle mobile called!");
+  };
+
+  //Adding listener for window resizing by user
+  useEffect(
+   () => {window.addEventListener("resize", handleIsMobile())}
+  )
 
   //Keeping it all together for better perfomance bruteforcing algorithm on submit
   const handleSubmit = () => {
@@ -61,6 +73,7 @@ function Home(props) {
       enteredPass={enteredPass}
       toggleReveal={toggleReveal}
       submitToggle={false}
+      isMobile={isMobile}
     />
   );
 }
