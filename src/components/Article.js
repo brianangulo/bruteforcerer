@@ -2,8 +2,8 @@ import React from "react";
 
 function Article() {
   return (
-    <div className="container">
-      <div className="row justify-content-center gy-5">
+    <div className="container" style={{paddingTop: "1rem"}}>
+      <div className="row gutter-sm justify-content-center gy-5">
         <div>
           <h2>What is a Brute Force Attack?</h2>
           <p>
@@ -14,7 +14,7 @@ function Article() {
             :
           </p>
         </div>
-        <div>
+        <div className="text-center">
           <p>
             A brute-force attack consists of an attacker submitting many
             passwords or passphrases with the hope of eventually guessing a
