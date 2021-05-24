@@ -104,15 +104,18 @@ To get a local copy up and running follow these simple steps.
    npm install
    ```
    or yarn 
+   
     ```sh
    yarn
    ```
+
 3. Start development server
 
  ```sh
    npm start
    ```
-   or yarn 
+   or yarn
+
     ```sh
    yarn start
    ```
