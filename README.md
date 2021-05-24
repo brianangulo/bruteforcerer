@@ -109,15 +109,14 @@ To get a local copy up and running follow these simple steps.
    yarn
    ```
 
-3. Start development server
-
- ```sh
-   npm start
+3. Run dev server
+   ```sh
+   npm install
    ```
-   or yarn
-
+   or yarn 
+   
     ```sh
-   yarn start
+   yarn
    ```
 
 
