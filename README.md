@@ -80,10 +80,10 @@
 
 ### Built With
 
-* [React.js]()
-* [Node.js]()
-* [Bootstrap]()
-* [Redux]()
+* [React.js](https://reactjs.org/)
+* [Node.js](https://nodejs.org/en/)
+* [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+* [Redux](https://redux.js.org/)
 
 
 
